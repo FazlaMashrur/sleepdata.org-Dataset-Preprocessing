@@ -28,30 +28,5 @@ Add the following directories to your MATLAB path:
 addpath(genpath('path_to_your_functions'))
 ```
 
-## Usage
-Example on how to run the preprocessing function:
-```matlab
-process_EDF_files('MESA', 'output_directory', window_size, overlap);
-```
-
-Explanation of the parameters:
-- `dataset`: Name of the dataset (e.g., 'MESA', 'CFS', 'SHHS', 'MROS')
-- `output_directory`: The directory where the processed CSV files will be saved.
-- `window_size`: The size of the sliding window in seconds.
-- `overlap`: Optional parameter defining the overlap between consecutive windows.
-
-## Example
-Example of processed output:
-- CSV file format:
-```csv
-Window_Start, Window_End, Signal_1, Signal_2, ..., Label
-0, 30, 0.34, 0.67, ..., 1
-30, 60, 0.45, 0.54, ..., 0
-...
-```
-
-## Contributing
-Guidelines on contributing, e.g., code style, how to report issues, etc.
-
 ## License
 Add the license details if applicable (e.g., MIT License).
